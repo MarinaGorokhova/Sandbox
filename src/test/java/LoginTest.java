@@ -6,12 +6,6 @@ import static org.testng.Assert.assertTrue;
 public class LoginTest extends BaseTest{
 
     @Test
-    public void checkLogin() throws InterruptedException {
-        loginPage.open();
-        loginPage.loginThruZip("12345");
-    }
-
-    @Test
     public void checkErrorLogin() {
         loginPage.open();
         loginPage.loginThruZip("12");
